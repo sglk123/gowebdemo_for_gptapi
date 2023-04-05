@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sglk ChatGpt Demo</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <a class="logo" href="/">LK GPT Demo</a>
+        <form action="/search" method="GET">
+          <input type="text" id="gptcontent" name="gptcontent">
+          <input type="submit" value="Submit">
+        </form>
+        <a
+          href="https://github.com/freshman-tech/news"
+          class="button github-button"
+          >View on Github</a
+        >
+      </header>
+      <section class="container">
+        <p>answer</p>
+        {{ . }}
+      </section>
+    </main>
+  </body>
+</html>
